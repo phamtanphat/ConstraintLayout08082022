@@ -6,14 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        app:layout_constraintDimensionRatio="875:1920"
-        android:src="@drawable/image_1"
+    <TextView
+        app:layout_constraintEnd_toStartOf="@id/text_view_b"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="0dp"
-        android:layout_height="100dp"/>
+        android:id="@+id/text_view_a"
+        android:background="#f20"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:text="A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintEnd_toStartOf="@id/text_view_c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_view_a"
+        android:id="@+id/text_view_b"
+        android:background="#0048FF"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:text="B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_view_b"
+        android:id="@+id/text_view_c"
+        android:background="#7EE4C8"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:text="C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
